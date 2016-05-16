@@ -158,9 +158,9 @@ void print_date_hook(void) {  // copy from the md380 code
     md380_itow(&wide[8], RTC_DateStruct.RTC_Date);
   } else {
     md380_itow(&wide[0], RTC_DateStruct.RTC_Date);
-    wide[2]='.';
+    wide[2]='/';
     md380_itow(&wide[3], RTC_DateStruct.RTC_Month);
-    wide[5]='.';
+    wide[5]='/';
     wide[6]='2';
     wide[7]='0';
     md380_itow(&wide[8], RTC_DateStruct.RTC_Year);

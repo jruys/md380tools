@@ -134,22 +134,22 @@ void wstrhex(wchar_t *string, long value){
 /* Displays a startup demo on the device's screen, including some of
    the setting information and a picture or two. */
 void demo(){
-  drawtext(L"MD380Tools ",
-	   160,20);
-  drawtext(L"by KK4VCZ  ",
-	   160,60);
-  drawtext(L"and Friends",
-	   160,100);
-  
-  sleep(1000);
-  
-  //Make the welcome image scroll across the screen.
-  for(int i=0;i<0x60;i+=3){
-    gfx_drawbmp(welcomebmp,0,i);
-    sleep(30);
-  }
-  
-  //Restore the bottom line of text before we return.
+//  drawtext(L"MD380Tools ",
+//	   160,20);
+//  drawtext(L"by KK4VCZ  ",
+//	   160,60);
+//  drawtext(L"and Friends",
+//	   160,100);
+//  
+//  sleep(1000);
+//  
+//Make the welcome image scroll across the screen.
+//  for(int i=0;i<0x60;i+=3){
+//    gfx_drawbmp(welcomebmp,0,i);
+//    sleep(30);
+//  }
+//  
+//Restore the bottom line of text before we return.
   md380_spiflash_read(botlinetext, 0x2054, 20);
 }
 

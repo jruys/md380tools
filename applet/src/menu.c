@@ -21,14 +21,14 @@
 #include "addl_config.h"
 
 static wchar_t wt_addl_func[]         = L"MD380Tools";
-static wchar_t wt_datef[]             = L"Date format";
+static wchar_t wt_datef[]             = L"Date Format";
 static wchar_t wt_debug[]             = L"Debug";
 static wchar_t wt_disable[]           = L"Disable";
 static wchar_t wt_enable[]            = L"Enable";
-static wchar_t wt_rbeep[]             = L"M. RogerBeep";
+static wchar_t wt_rbeep[]             = L"Muted Beep";
 static wchar_t wt_userscsv[]          = L"UsersCSV";
-static wchar_t wt_datef_original[]    = L"Original";
-static wchar_t wt_datef_germany[]     = L"German";
+static wchar_t wt_datef_original[]    = L"YYYY/MM/DD";
+static wchar_t wt_datef_germany[]     = L"DD/MM/YYYY";
 static wchar_t wt_promtg[]            = L"Promiscuous";
 static wchar_t wt_edit[]              = L"Edit";
 static wchar_t wt_edit_dmr_id[]       = L"Edit DMR-ID";
